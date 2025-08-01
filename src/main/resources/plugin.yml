@@ -1,0 +1,7 @@
+name: 0xfHideCommands
+main: br.com._0xf.HideCommands.Main
+version: 1.0-SNAPSHOT
+author: 0xflucas
+permissions:
+  hidecommands.bypass:
+    description: Permite o jogador usar comandos bloqueados

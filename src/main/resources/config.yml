@@ -1,0 +1,4 @@
+message: '&fUnknown command: &c{command}'
+commands:
+  - 'nchat'
+  - 'lp'
