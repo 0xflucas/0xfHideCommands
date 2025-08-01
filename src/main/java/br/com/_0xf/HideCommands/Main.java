@@ -1,6 +1,6 @@
 package br.com._0xf.HideCommands;
 
-import br.com._0xf.commands.HiddedCommand;
+import br.com._0xf.handlers.PreCommandHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,7 +10,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         this.saveDefaultConfig();
 
-        new HiddedCommand(this);
+        new PreCommandHandler(this);
         msgs();
     }
 

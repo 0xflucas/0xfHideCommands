@@ -1,4 +1,4 @@
-package br.com._0xf.commands;
+package br.com._0xf.handlers;
 
 import br.com._0xf.HideCommands.Main;
 import org.bukkit.ChatColor;
@@ -9,12 +9,12 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
 import java.util.List;
 
-public class HiddedCommand implements Listener {
+public class PreCommandHandler implements Listener {
 
     private final List<String> commands;
     private final String message;
 
-    public HiddedCommand(Main main) {
+    public PreCommandHandler(Main main) {
         this.commands = main.getConfig().getStringList("commands");
         this.message = ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("message"));
         main.getServer().getPluginManager().registerEvents(this, main);
